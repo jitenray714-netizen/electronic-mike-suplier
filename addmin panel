@@ -1,0 +1,82 @@
+Initialize a structured web project for an e-commerce admin panel for the shop **"ELECTRONIC MIKE SUPLIER"**. The goal is to build a modular, scalable, and clean admin system using HTML, CSS, and JavaScript.
+
+Step 1: Project Structure
+Create the following folder structure:
+
+* /project-root
+
+  * index.html (main website)
+  * admin.html (admin panel UI)
+  * /css/style.css (shared styles)
+  * /js/script.js (main website logic)
+  * /js/admin.js (admin panel logic)
+  * /js/storage.js (localStorage handling functions)
+  * /js/auth.js (admin authentication logic)
+  * /assets/images (product images)
+
+Step 2: Admin Panel Initialization
+In admin.html, create a clean dashboard layout with:
+
+* Header (Admin Panel title + logout button)
+* Sidebar (Dashboard, Add Product, Manage Products)
+* Main content area (dynamic content sections)
+
+Step 3: Admin Authentication Module
+In auth.js:
+
+* Implement simple admin login using a fixed password
+* Store admin session in localStorage
+* Restrict admin.html access if not logged in
+* Add login form UI if not authenticated
+
+Step 4: Storage Module
+In storage.js:
+
+* Create reusable functions:
+
+  * getProducts()
+  * saveProducts(products)
+  * addProduct(product)
+  * deleteProduct(index)
+* Use localStorage for data persistence
+
+Step 5: Product Management Module
+In admin.js:
+
+* Initialize dashboard on load
+* Create "Add Product" form (name, price, image URL, description)
+* Save product using storage module
+* Display product list dynamically
+* Add delete button for each product
+
+Step 6: UI Components
+Design reusable UI:
+
+* Product cards
+* Buttons (Add, Delete)
+* Input forms
+* Responsive layout
+
+Step 7: Integration with Main Website
+Ensure products saved from admin panel are automatically visible in index.html via shared storage (localStorage).
+
+Step 8: Code Quality
+
+* Use clean modular JavaScript (separate concerns)
+* Add comments for each function
+* Use meaningful variable names
+* Avoid inline scripts
+
+Step 9: Security Note
+Mention clearly that this admin system is for learning/demo only and not secure for production. Suggest future upgrade to Firebase Authentication and Firestore.
+
+Step 10: Final Output
+Generate full working code for:
+
+* admin.html
+* css/style.css
+* js/admin.js
+* js/storage.js
+* js/auth.js
+
+Ensure the admin panel is fully functional, clean UI, and ready to integrate with the main website.
